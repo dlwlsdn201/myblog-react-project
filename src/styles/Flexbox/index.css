@@ -1,0 +1,27 @@
+.container .container--inner {
+  padding: 5% 20%;
+}
+
+.container .container--inner .section .title {
+  font-weight: 600;
+}
+
+.container .container--inner .section .desc {
+  opacity: 0.9;
+  font-weight: 200;
+  font-size: 1.4rem;
+}
+
+.container .container--inner .section-1 {
+  margin-bottom: 20px;
+}
+
+.container .container--inner .section-3 .btn {
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.container .container--inner .section-3 .btn-primary {
+  margin-right: 6px;
+}
