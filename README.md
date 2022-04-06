@@ -11,24 +11,12 @@
 # Skills
 
  <div id="container" style="display: flex; width: 100%; justify-content: space-around;">
-  <div class="icon-block" style="display: flex; flex-flow: column nowrap; align-items: center;">
-<img alt="React" max-width="100px" height="30px" src ="https://img.shields.io/badge/React-black.svg?&style=for-the-badge&logo=React&logoColor=61DAFB"/>
-  </div>
-  <div class="icon-block" style="display: flex; flex-flow: column nowrap; align-items: center;">
-  <img alt="Typescript" max-width="100px" height="30px" src ="https://img.shields.io/badge/Typescript-3178C6.svg?&style=for-the-badge&logo=Typescript&logoColor=white"/>
-  </div>
-  <div class="icon-block" style="display: flex; flex-flow: column nowrap; align-items: center;">
-     <img alt="react-router" max-width="100px" height="30px" src ="https://img.shields.io/badge/React_router-CA4245.svg?&style=for-the-badge&logo=React-router&logoColor=white"/>
-  </div>
-    <div class="icon-block" style="display: flex; flex-flow: column nowrap; align-items: center;">
-         <img alt="bootstrap" max-width="100px" height="30px" src ="https://img.shields.io/badge/bootstrap-7952B3.svg?&style=for-the-badge&logo=bootstrap&logoColor=white"/>
-  </div>
-    <div class="icon-block" style="display: flex; flex-flow: column nowrap; align-items: center;">
-     <img alt="sass" max-width="100px" height="30px" src ="https://img.shields.io/badge/sass-CC6699.svg?&style=for-the-badge&logo=sass&logoColor=white"/>
-  </div>
-  <div class="icon-block" style="display: flex; flex-flow: column nowrap; align-items: center;">
-         <img alt="hugo" max-width="100px" height="30px" src ="https://img.shields.io/badge/hugo-FF4088.svg?&style=for-the-badge&logo=hugo&logoColor=white"/>
-  </div>
+    <img alt="React" height="30px" src ="https://img.shields.io/badge/React-black.svg?&style=for-the-badge&logo=React&logoColor=61DAFB"/>
+   <img alt="Typescript" height="30px" src ="https://img.shields.io/badge/Typescript-3178C6.svg?&style=for-the-badge&logo=Typescript&logoColor=white"/>
+     <img alt="react-router" height="30px" src ="https://img.shields.io/badge/React_router-CA4245.svg?&style=for-the-badge&logo=React-router&logoColor=white"/>
+    <img alt="bootstrap" height="30px" src ="https://img.shields.io/badge/bootstrap-7952B3.svg?&style=for-the-badge&logo=bootstrap&logoColor=white"/>
+    <img alt="sass" height="30px" src ="https://img.shields.io/badge/sass-CC6699.svg?&style=for-the-badge&logo=sass&logoColor=white"/>
+    <img alt="hugo" height="30px" src ="https://img.shields.io/badge/hugo-FF4088.svg?&style=for-the-badge&logo=hugo&logoColor=white"/>
  </div>
 
 ---
