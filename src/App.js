@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavComponent from './conponents/nav';
+import NavComponent from './components/nav';
 import Home from './pages/Home.tsx';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -19,7 +19,6 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/About" element={<About />}></Route>
           <Route path="/About" element={<About />}></Route>
           <Route path="/FrontEnd" element={<FrontEnd />}></Route>
           <Route path="/BackEnd" element={<BackEnd />}></Route>
