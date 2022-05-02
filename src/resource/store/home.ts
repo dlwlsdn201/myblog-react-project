@@ -10,10 +10,10 @@ type State = {
 };
 
 const HomeState = create<State>((set) => ({
-	html: 20,
-	css: 0,
-	javascript: 0,
-	react: 0,
+	html: 70,
+	css: 60,
+	javascript: 70,
+	react: 60,
 	increase: (type) => set((state) => ({ [type]: state.html + 1 })),
 	decrease: (type) => set((state) => ({ [type]: state.html - 1 }))
 }));

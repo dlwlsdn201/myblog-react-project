@@ -11,3 +11,25 @@
   background-size: cover;
   background-position: center 20%;
 }
+
+
+// Skills 
+
+.div_skills-item-block {
+  display: flex;
+  align-items: center;
+
+  .div_skills-icon {
+    margin-right: 0.5rem;
+    text-align: left;
+    width:6.7rem
+  }
+
+  .div_skills-level {
+    width: 100%;
+
+    .progress {
+      height: 1.1rem;
+    }
+  }
+}
