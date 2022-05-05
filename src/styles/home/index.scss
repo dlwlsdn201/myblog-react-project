@@ -13,6 +13,60 @@
 }
 
 
+// Profile
+.section_basic-info {
+  position: relative;
+  padding: 0.1rem 2rem;
+
+  .div_basic-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .div_profile-block {
+      .profile-image {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50px 50px 50px 50px;
+        position: absolute;
+        top: -70px
+      }
+
+      .span_profile-desc-box {
+        padding-left: 10rem;
+      }
+    }
+
+    .div_sns-block {
+      flex: 0.3;
+
+      .div_sns-title {
+        flex: 0.2;
+      }
+
+      .div_sns-icon-box {
+        flex: 0.8;
+        justify-content: space-around;
+
+        .sns-icon {
+          display: flex;
+          height: 1.3rem;
+          cursor: pointer;
+        }
+
+        .instagram {
+          color: #fff;
+          font-size: 220px;
+          line-height: 250px;
+          vertical-align: middle;
+          background: #d6249f;
+          background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+        }
+      }
+    }
+  }
+}
 // Skills 
 
 .div_skills-item-block {

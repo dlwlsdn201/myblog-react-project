@@ -1,7 +1,5 @@
 import '../styles/home/index.css';
 import React from 'react';
-import { ProgressBar } from 'react-bootstrap';
-import Skills from '../components/Home/Skills';
 import HomeContainer from '../components/Home';
 
 const HomePage = () => {
