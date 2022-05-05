@@ -1,21 +1,43 @@
 import create from 'zustand';
 
+export interface ISkillStateObj {
+	value: number;
+	color: string;
+}
+
 type State = {
-	html: number;
-	css: number;
-	javascript: number;
-	react: number;
+	html: ISkillStateObj;
+	css: ISkillStateObj;
+	sass: ISkillStateObj;
+	javascript: ISkillStateObj;
+	react: ISkillStateObj;
 	increase: (type: string) => void;
 	decrease: (type: string) => void;
 };
 
 const HomeState = create<State>((set) => ({
-	html: 70,
-	css: 60,
-	javascript: 70,
-	react: 60,
-	increase: (type) => set((state) => ({ [type]: state.html + 1 })),
-	decrease: (type) => set((state) => ({ [type]: state.html - 1 }))
+	html: {
+		value: 70,
+		color: '#e54c21'
+	},
+	css: {
+		value: 60,
+		color: '#007bc9'
+	},
+	sass: {
+		value: 65,
+		color: '#cd669a'
+	},
+	javascript: {
+		value: 70,
+		color: '#e5a228'
+	},
+	react: {
+		value: 60,
+		color: '#5ccfee'
+	},
+	increase: (type) => set((state) => ({ [type]: state[type].value + 1 })),
+	decrease: (type) => set((state) => ({ [type]: state[type].value - 1 }))
 }));
 
 export default HomeState;
