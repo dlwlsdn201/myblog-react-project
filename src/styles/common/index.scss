@@ -1,4 +1,7 @@
 // 여백 div 
+.margin-div-minimum {
+  margin: 0.5rem 0;
+}
 .margin-div-1rem {
   margin: 1rem 0;
 }
@@ -16,7 +19,26 @@
   display: flex;
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-around {
+  display: flex;
+  justify-content: space-around;
+}
 .flex-column {
   display: flex;
   flex-direction: column;
+}
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

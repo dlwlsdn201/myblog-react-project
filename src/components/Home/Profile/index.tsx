@@ -28,6 +28,7 @@ const Profile = () => {
 						<FontAwesomeIcon
 							icon={faInstagram}
 							className='sns-icon instagram'
+							size={'2x'}
 						/>
 					</span>
 					<span className='span_sns-icon-item'>
@@ -35,10 +36,15 @@ const Profile = () => {
 							icon={faYoutube}
 							className='sns-icon'
 							color={'#ff0000'}
+							size={'2x'}
 						/>
 					</span>
 					<span className='span_sns-icon-item'>
-						<FontAwesomeIcon icon={faGithub} className='sns-icon' />
+						<FontAwesomeIcon
+							icon={faGithub}
+							className='sns-icon'
+							size={'10x'}
+						/>
 					</span>
 				</div>
 			</div>
