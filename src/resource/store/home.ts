@@ -11,11 +11,14 @@ type State = {
 	sass: ISkillStateObj;
 	javascript: ISkillStateObj;
 	react: ISkillStateObj;
+	visitCount: number;
+	studyPost: number;
+	project: number;
 	increase: (type: string) => void;
 	decrease: (type: string) => void;
 };
 
-const HomeState = create<State>((set) => ({
+const homeState = create<State>((set) => ({
 	html: {
 		value: 70,
 		color: '#e54c21'
@@ -36,8 +39,11 @@ const HomeState = create<State>((set) => ({
 		value: 60,
 		color: '#5ccfee'
 	},
+	visitCount: 0,
+	studyPost: 0,
+	project: 0,
 	increase: (type) => set((state) => ({ [type]: state[type].value + 1 })),
 	decrease: (type) => set((state) => ({ [type]: state[type].value - 1 }))
 }));
 
-export default HomeState;
+export default homeState;
