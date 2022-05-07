@@ -23,16 +23,52 @@
 
 # config
 
-### library
+>## library
+>- react : 메인 환경
+>- react-bootstrap : 레이아웃, 아이콘 등 주 스타일적 요소
+>- typescript : 메인 언어
+>- Zustand :상태 관리 라이브러리
+>- sass : 부가적인 스타일 속성 적용 등
+>- react-router : 페이지 간 이동
+>- eslint : 코드 문법 오류 탐색 및 수정
+>- prettier : 코드 문법 포맷팅
 
-- react : 메인 환경
-- react-bootstrap : 레이아웃, 아이콘 등 주 스타일적 요소
-- typescript : 메인 언어
-- Zustand :상태 관리 라이브러리
-- sass : 부가적인 스타일 속성 적용 등
-- react-router : 페이지 간 이동
-- eslint : 코드 문법 오류 탐색 및 수정
-- prettier : 코드 문법 포맷팅
+> ## set up
+>### Fontawesome 
+>  - 설치
+>    ```bash
+>    $yarn add @fortawesome/fontawesome-free   // 무료버전 아이콘
+>    $yarn add @fortawesome/fontawesome-svg-core  
+>    $yarn add @fortawesome/free-solid-svg-icons   // 무료 solid 타입 svg 아이콘
+>    $yarn add @fortawesome/free-regular-svg-icons   // 무료 regular 타입 svg 아이콘
+>    $yarn add @fortawesome/free-brands-svg-icons   // 무료 brand 타입 svg 아이콘
+>    $yarn add @fortawesome/react-fontawesome      // react 용 라이브러리
+>    ```
+>    
+>- 문법
+>    
+>    ```tsx
+>    <FontAwesomeIcon icon={faCoffee} />
+>    <FontAwesomeIcon icon={faHtml5} />
+>    ```
+>    
+>- 사용
+>    
+>    ```tsx
+>    import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+>    import { faCoffee, faHtml5 } from '@fortawesome/free-solid-svg-icons';
+>    
+>    const Component = () => {
+>    	return (
+>    		<div className='div_skills-icon'>
+>    			<strong>
+>    				<FontAwesomeIcon icon={faCoffee} />
+>    				<FontAwesomeIcon icon={faHtml5} />
+>    			</strong>
+>    		</div>
+>    	)
+>    }
+>    ```
 
 ---
 
