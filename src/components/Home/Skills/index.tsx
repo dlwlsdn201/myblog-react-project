@@ -33,59 +33,49 @@ const Skills = () => {
 	const { html, css, javascript, react, sass } = homeStore();
 
 	return (
-		<div className='div_skills-inner'>
-			<div className='div_skills-wrapper'>
-				<div className='row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'>
-					<div className='col p-4 d-flex flex-column position-static'>
-						<div className='div_skills-title-block'>
-							<strong className='div-inline-block mb-2 text-primary'>
-								My current Skill
-							</strong>
+		<div className='inner-container'>
+			<div className='skills-wrapper'>
+				<div className='col p-4 d-flex flex-column position-static'>
+					<div className='div_skills-title-block'>
+						<strong className='div-inline-block mb-2 text-primary'>
+							My current Skill
+						</strong>
+					</div>
+					<div className='div_skills-item-block'>
+						<div className='div_skills-icon'>
+							<FontAwesomeIcon icon={faHtml5} size={'2x'} color={html.color} />
 						</div>
-						<div className='div_skills-item-block'>
-							<div className='div_skills-icon'>
-								<FontAwesomeIcon
-									icon={faHtml5}
-									size={'2x'}
-									color={html.color}
-								/>
-							</div>
-							<div className='div_skills-level'>{renderProgressBar(html)}</div>
+						<div className='div_skills-level'>{renderProgressBar(html)}</div>
+					</div>
+					<div className='div_skills-item-block'>
+						<div className='div_skills-icon'>
+							<FontAwesomeIcon icon={faCss3} size={'2x'} color={css.color} />
 						</div>
-						<div className='div_skills-item-block'>
-							<div className='div_skills-icon'>
-								<FontAwesomeIcon icon={faCss3} size={'2x'} color={css.color} />
-							</div>
-							<div className='div_skills-level'>{renderProgressBar(css)}</div>
+						<div className='div_skills-level'>{renderProgressBar(css)}</div>
+					</div>
+					<div className='div_skills-item-block'>
+						<div className='div_skills-icon'>
+							<FontAwesomeIcon icon={faSass} size={'2x'} color={sass.color} />
 						</div>
-						<div className='div_skills-item-block'>
-							<div className='div_skills-icon'>
-								<FontAwesomeIcon icon={faSass} size={'2x'} color={sass.color} />
-							</div>
-							<div className='div_skills-level'>{renderProgressBar(sass)}</div>
+						<div className='div_skills-level'>{renderProgressBar(sass)}</div>
+					</div>
+					<div className='div_skills-item-block'>
+						<div className='div_skills-icon'>
+							<FontAwesomeIcon
+								icon={faJs}
+								size={'2x'}
+								color={javascript.color}
+							/>
 						</div>
-						<div className='div_skills-item-block'>
-							<div className='div_skills-icon'>
-								<FontAwesomeIcon
-									icon={faJs}
-									size={'2x'}
-									color={javascript.color}
-								/>
-							</div>
-							<div className='div_skills-level'>
-								{renderProgressBar(javascript)}
-							</div>
+						<div className='div_skills-level'>
+							{renderProgressBar(javascript)}
 						</div>
-						<div className='div_skills-item-block'>
-							<div className='div_skills-icon'>
-								<FontAwesomeIcon
-									icon={faReact}
-									size={'2x'}
-									color={react.color}
-								/>
-							</div>
-							<div className='div_skills-level'>{renderProgressBar(react)}</div>
+					</div>
+					<div className='div_skills-item-block'>
+						<div className='div_skills-icon'>
+							<FontAwesomeIcon icon={faReact} size={'2x'} color={react.color} />
 						</div>
+						<div className='div_skills-level'>{renderProgressBar(react)}</div>
 					</div>
 				</div>
 			</div>

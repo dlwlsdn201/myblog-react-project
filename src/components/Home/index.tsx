@@ -1,6 +1,7 @@
 import React from 'react';
 import Profile from './Profile';
 import Skills from './Skills/index';
+import Statistics from './Statistics';
 
 const HomeContainer = () => {
 	return (
@@ -24,11 +25,23 @@ const HomeContainer = () => {
 				</section>
 				<div className='margin-div-6rem'></div>
 				<div className='col-md-6'>
-					<section className='section-common my-current-skills'>
-						<Skills />
-					</section>
+					<div className='row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'>
+						<section className='section-common my-current-skills'>
+							<Skills />
+						</section>
+					</div>
 				</div>
-				<div className='col-md-6'>{/* 게시글 통계 */}</div>
+				<div className='col-md-6'>
+					<div className='row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'>
+						<section className='section-common statistics'>
+							<Statistics />
+						</section>
+					</div>
+				</div>
+			</div>
+			<div className='row mb-2'>
+				<div className='col-md-6'>Left-Bottom-Card (최근 업데이트 컨텐츠)</div>
+				<div className='col-md-6'>Right-Bottom-Card (계획 중)</div>
 			</div>
 		</>
 	);

@@ -28,15 +28,17 @@
 }
 
 .section_basic-info .div_basic-info-wrapper .div_sns-block {
-  flex: 0.3;
+  flex: 0.15;
 }
 
 .section_basic-info .div_basic-info-wrapper .div_sns-block .div_sns-title {
-  flex: 0.2;
+  flex: 0.4;
+  text-align: right;
+  float: right;
 }
 
 .section_basic-info .div_basic-info-wrapper .div_sns-block .div_sns-icon-box {
-  flex: 0.8;
+  flex: 0.6;
   justify-content: space-around;
 }
 
@@ -65,7 +67,7 @@
 .div_skills-item-block .div_skills-icon {
   margin-right: 0.5rem;
   text-align: center;
-  width: 6.7rem;
+  width: 2.7rem;
 }
 
 .div_skills-item-block .div_skills-level {
@@ -74,4 +76,36 @@
 
 .div_skills-item-block .div_skills-level .progress {
   height: 1.1rem;
+}
+
+.div_skills-item-block:last-child {
+  margin-bottom: 0;
+}
+
+.div_statistics-wrapper .title-block {
+  flex: 0.2;
+}
+
+.div_statistics-wrapper .contents-block-wrapper {
+  display: flex;
+  align-items: center;
+  flex: 0.8;
+  width: 100%;
+}
+
+.div_statistics-wrapper .contents-block-wrapper .contents-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.div_statistics-wrapper .contents-block-wrapper .contents-block .card-body {
+  display: inherit;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.div_statistics-wrapper .contents-block-wrapper .contents-block .card-body .card-text {
+  font-weight: bolder;
+  font-size: 1.4rem;
 }
