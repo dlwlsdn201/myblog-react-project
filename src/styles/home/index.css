@@ -4,6 +4,14 @@
   background-position: center 20%;
 }
 
+.title-block {
+  flex: 0.2;
+}
+
+.contents-block-wrapper {
+  flex: 0.8;
+}
+
 .section_basic-info {
   position: relative;
   padding: 0.1rem 2rem;
@@ -82,14 +90,9 @@
   margin-bottom: 0;
 }
 
-.div_statistics-wrapper .title-block {
-  flex: 0.2;
-}
-
 .div_statistics-wrapper .contents-block-wrapper {
   display: flex;
   align-items: center;
-  flex: 0.8;
   width: 100%;
 }
 
@@ -108,4 +111,14 @@
 .div_statistics-wrapper .contents-block-wrapper .contents-block .card-body .card-text {
   font-weight: bolder;
   font-size: 1.4rem;
+}
+
+.div_latest--post-wrapper .card-title {
+  text-overflow: ellipsis;
+  width: 7rem;
+  overflow: hidden;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
