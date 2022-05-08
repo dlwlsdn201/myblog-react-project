@@ -1,4 +1,4 @@
-
+// common
 .intro-card {
   background: linear-gradient(
       to left,
@@ -13,6 +13,13 @@
   background-position: center 20%;
 }
 
+.title-block {
+  flex: 0.2;
+}
+
+.contents-block-wrapper {
+  flex: 0.8;
+}
 
 // Profile
 .section_basic-info {
@@ -98,18 +105,11 @@
   // Statistics
   
   .div_statistics-wrapper {
-    .title-block {
-      // margin-bottom: 1rem;
-    }
   
-    .title-block {
-      flex: 0.2;
-    }
   
     .contents-block-wrapper {
       display: flex;
       align-items: center;
-      flex: 0.8;
       width: 100%;
   
       .contents-block {
@@ -133,4 +133,18 @@
         }
       }
     }
+}
+
+// Latest Post
+
+.div_latest--post-wrapper {
+  .card-title {
+    text-overflow: ellipsis;
+    width: 7rem;
+    overflow: hidden;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import Profile from './Profile';
 import Skills from './Skills/index';
 import Statistics from './Statistics';
+import LatestPost from './LatestPost/index';
 
 const HomeContainer = () => {
 	return (
@@ -40,7 +41,13 @@ const HomeContainer = () => {
 				</div>
 			</div>
 			<div className='row mb-2'>
-				<div className='col-md-6'>Left-Bottom-Card (최근 업데이트 컨텐츠)</div>
+				<div className='col-md-6'>
+					<div className='row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'>
+						<section className='section-common latest--post'>
+							<LatestPost />
+						</section>
+					</div>
+				</div>
 				<div className='col-md-6'>Right-Bottom-Card (계획 중)</div>
 			</div>
 		</>
