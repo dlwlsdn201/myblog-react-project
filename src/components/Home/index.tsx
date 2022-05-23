@@ -3,6 +3,7 @@ import Profile from './Profile';
 import Skills from './Skills/index';
 import Statistics from './Statistics';
 import LatestPost from './LatestPost/index';
+import Undesigned from './Undesigned';
 
 const HomeContainer = () => {
 	return (
@@ -48,7 +49,13 @@ const HomeContainer = () => {
 						</section>
 					</div>
 				</div>
-				<div className='col-md-6'>Right-Bottom-Card (계획 중)</div>
+				<div className='col-md-6'>
+					<div className='row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'>
+						<section className='section-common latest--post'>
+							<Undesigned />
+						</section>
+					</div>
+				</div>
 			</div>
 		</>
 	);
