@@ -13,6 +13,7 @@ type State = {
 	sass: ISkillStateObj;
 	javascript: ISkillStateObj;
 	react: ISkillStateObj;
+	setting: boolean;
 	visitCount: number;
 	studyPost: number;
 	project: number;
@@ -26,6 +27,7 @@ type State = {
 	decreaseSASS: () => void;
 	decreaseJS: () => void;
 	decreaseREACT: () => void;
+	isSetting: () => void;
 };
 
 const homeState = create<State>((set) => ({
@@ -49,6 +51,7 @@ const homeState = create<State>((set) => ({
 		value: 60,
 		color: '#5ccfee'
 	},
+	setting: false,
 	visitCount: 0,
 	studyPost: 0,
 	project: 0,
@@ -110,6 +113,12 @@ const homeState = create<State>((set) => ({
 		set(
 			produce((state) => {
 				state.react.value = state.react.value - 1;
+			})
+		),
+	isSetting: () =>
+		set(
+			produce((state) => {
+				state.setting = !state.setting;
 			})
 		)
 }));
