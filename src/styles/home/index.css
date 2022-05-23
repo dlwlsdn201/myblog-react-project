@@ -66,6 +66,18 @@
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
 }
 
+.div_skills-title-block {
+  position: relative;
+}
+
+.div_skills-title-block .setting-btn {
+  position: absolute;
+  right: 0;
+  width: 1.2rem;
+  height: auto;
+  cursor: pointer;
+}
+
 .div_skills-item-block {
   display: flex;
   align-items: center;
@@ -84,6 +96,25 @@
 
 .div_skills-item-block .div_skills-level .progress {
   height: 1.1rem;
+}
+
+.div_skills-item-block .div_skills-control-block {
+  display: none;
+  margin-left: 1rem;
+}
+
+.div_skills-item-block .div_skills-control-block .btn-primary {
+  height: 100%;
+  font-size: 1rem;
+  padding: 0rem 0.3rem;
+}
+
+.div_skills-item-block .div_skills-control-block .btn-primary:first-child {
+  margin-right: 0.2rem;
+}
+
+.div_skills-item-block .div_skills-control-block.setting-active {
+  display: flex;
 }
 
 .div_skills-item-block:last-child {
