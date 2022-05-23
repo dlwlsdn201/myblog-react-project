@@ -22,6 +22,143 @@
 ---
 
 # config
+## 상태 관리 도구
+### Zustand
+- **정의**
+  + 독일어로 '상태' 라는 뜻을 가진 단어이며, Context API와 비슷하지만 상태를 정의하고 사용하는 방법이 비교적 간단한 상태 관리 라이브러리.
+- **특성**
+  + Context API 에서 자주 접할 수 있는 리렌더링 문제를 개선 가능
+  + Provider 로 감싸줄 필요 X 
+  + 초기 설정 코드가 정말 간결함
+  
+- home page 상태 관리 store 
+>``` tsx
+>> import create from 'zustand';
+>> import produce from 'immer';
+>> 
+>> export interface ISkillStateObj {
+>> 	value: number;
+>> 	color: string;
+>> }
+>> 
+>> type State = {
+>> 	html: ISkillStateObj;
+>> 	css: ISkillStateObj;
+>> 	sass: ISkillStateObj;
+>> 	javascript: ISkillStateObj;
+>> 	react: ISkillStateObj;
+>> 	setting: boolean;
+>> 	visitCount: number;
+>> 	studyPost: number;
+>> 	project: number;
+>> 	increaseHTML: () => void;
+>> 	increaseCSS: () => void;
+>> 	increaseSASS: () => void;
+>> 	increaseJS: () => void;
+>> 	increaseREACT: () => void;
+>> 	decreaseHTML: () => void;
+>> 	decreaseCSS: () => void;
+>> 	decreaseSASS: () => void;
+>> 	decreaseJS: () => void;
+>> 	decreaseREACT: () => void;
+>> 	isSetting: () => void;
+>> };
+>> 
+>> const homeState = create<State>((set) => ({
+>> 	html: {
+>> 		value: 70,
+>> 		color: '#e54c21'
+>> 	},
+>> 	css: {
+>> 		value: 60,
+>> 		color: '#007bc9'
+>> 	},
+>> 	sass: {
+>> 		value: 65,
+>> 		color: '#cd669a'
+>> 	},
+>> 	javascript: {
+>> 		value: 70,
+>> 		color: '#e5a228'
+>> 	},
+>> 	react: {
+>> 		value: 60,
+>> 		color: '#5ccfee'
+>> 	},
+>> 	setting: false,
+>> 	visitCount: 0,
+>> 	studyPost: 0,
+>> 	project: 0,
+>> 	increaseHTML: () =>
+>> 		set(
+>> 			produce((state) => {
+>> 				state.html.value = state.html.value + 1;
+>> 			})
+>> 		),
+>> 	increaseCSS: () =>
+>> 		set(
+>> 			produce((state) => {
+>> 				state.css.value = state.css.value + 1;
+>> 			})
+>> 		),
+>> 	increaseSASS: () =>
+>> 		set(
+>> 			produce((state) => {
+>> 				state.cass.value = state.cass.value + 1;
+>> 			})
+>> 		),
+>> 	increaseJS: () =>
+>> 		set(
+>> 			produce((state) => {
+>> 				state.javascript.value = state.javascript.value + 1;
+>> 			})
+>> 		),
+>> 	increaseREACT: () =>
+>> 		set(
+>> 			produce((state) => {
+>> 				state.react.value = state.react.value + 1;
+>> 			})
+>> 		),
+>> 	decreaseHTML: () =>
+>> 		set(
+>> 			produce((state) => {
+>> 				state.css.value = state.css.value - 1;
+>> 			})
+>> 		),
+>> 	decreaseCSS: () =>
+>> 		set(
+>> 			produce((state) => {
+>> 				state.css.value = state.css.value - 1;
+>> 			})
+>> 		),
+>> 	decreaseSASS: () =>
+>> 		set(
+>> 			produce((state) => {
+>> 				state.cass.value = state.cass.value - 1;
+>> 			})
+>> 		),
+>> 	decreaseJS: () =>
+>> 		set(
+>> 			produce((state) => {
+>> 				state.javascript.value = state.javascript.value - 1;
+>> 			})
+>> 		),
+>> 	decreaseREACT: () =>
+>> 		set(
+>> 			produce((state) => {
+>> 				state.react.value = state.react.value - 1;
+>> 			})
+>> 		),
+>> 	isSetting: () =>
+>> 		set(
+>> 			produce((state) => {
+>> 				state.setting = !state.setting;
+>> 			})
+>> 		)
+>> }));
+>> 
+>>export default homeState;
+>```
 
 >## library
 >- react : 메인 환경
@@ -73,13 +210,18 @@
 ---
 
 > # Description
+## HomePage
+### 주요 기능
+- 언어별 스킬 레벨 차트
+- 사이트의 카테고리별 포스트 수 차트
+- 사이트의 카테고리별 최신 포스트 알림
 
 ---
 
-> # Error
->
-> > ### <error 내용>
->
-> - **증상** :
-> - **원인 :**
-> - **솔루션** :
+# Error
+
+### <error 내용>
+
+ - **증상** :
+ - **원인 :**
+ - **솔루션** :

@@ -1,4 +1,3 @@
-import { type } from '@testing-library/user-event/dist/type';
 import create from 'zustand';
 import produce from 'immer';
 
