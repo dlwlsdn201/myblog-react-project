@@ -1,4 +1,6 @@
+import { type } from '@testing-library/user-event/dist/type';
 import create from 'zustand';
+import produce from 'immer';
 
 export interface ISkillStateObj {
 	value: number;
@@ -14,8 +16,16 @@ type State = {
 	visitCount: number;
 	studyPost: number;
 	project: number;
-	increase: (type: string) => void;
-	decrease: (type: string) => void;
+	increaseHTML: () => void;
+	increaseCSS: () => void;
+	increaseSASS: () => void;
+	increaseJS: () => void;
+	increaseREACT: () => void;
+	decreaseHTML: () => void;
+	decreaseCSS: () => void;
+	decreaseSASS: () => void;
+	decreaseJS: () => void;
+	decreaseREACT: () => void;
 };
 
 const homeState = create<State>((set) => ({
@@ -42,8 +52,66 @@ const homeState = create<State>((set) => ({
 	visitCount: 0,
 	studyPost: 0,
 	project: 0,
-	increase: (type) => set((state) => ({ [type]: state[type].value + 1 })),
-	decrease: (type) => set((state) => ({ [type]: state[type].value - 1 }))
+	increaseHTML: () =>
+		set(
+			produce((state) => {
+				state.html.value = state.html.value + 1;
+			})
+		),
+	increaseCSS: () =>
+		set(
+			produce((state) => {
+				state.css.value = state.css.value + 1;
+			})
+		),
+	increaseSASS: () =>
+		set(
+			produce((state) => {
+				state.cass.value = state.cass.value + 1;
+			})
+		),
+	increaseJS: () =>
+		set(
+			produce((state) => {
+				state.javascript.value = state.javascript.value + 1;
+			})
+		),
+	increaseREACT: () =>
+		set(
+			produce((state) => {
+				state.react.value = state.react.value + 1;
+			})
+		),
+	decreaseHTML: () =>
+		set(
+			produce((state) => {
+				state.css.value = state.css.value - 1;
+			})
+		),
+	decreaseCSS: () =>
+		set(
+			produce((state) => {
+				state.css.value = state.css.value - 1;
+			})
+		),
+	decreaseSASS: () =>
+		set(
+			produce((state) => {
+				state.cass.value = state.cass.value - 1;
+			})
+		),
+	decreaseJS: () =>
+		set(
+			produce((state) => {
+				state.javascript.value = state.javascript.value - 1;
+			})
+		),
+	decreaseREACT: () =>
+		set(
+			produce((state) => {
+				state.react.value = state.react.value - 1;
+			})
+		)
 }));
 
 export default homeState;
