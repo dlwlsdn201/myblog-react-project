@@ -28,7 +28,7 @@
   object-fit: cover;
   border-radius: 50px 50px 50px 50px;
   position: absolute;
-  top: -70px;
+  top: -100px;
 }
 
 .section_basic-info .div_basic-info-wrapper .div_profile-block .span_profile-desc-box {
@@ -36,7 +36,8 @@
 }
 
 .section_basic-info .div_basic-info-wrapper .div_sns-block {
-  flex: 0.15;
+  flex: 0.3;
+  justify-content: flex-end;
 }
 
 .section_basic-info .div_basic-info-wrapper .div_sns-block .div_sns-title {
@@ -52,18 +53,8 @@
 
 .section_basic-info .div_basic-info-wrapper .div_sns-block .div_sns-icon-box .sns-icon {
   display: flex;
-  height: 1.3rem;
+  height: 1.5rem;
   cursor: pointer;
-}
-
-.section_basic-info .div_basic-info-wrapper .div_sns-block .div_sns-icon-box .instagram {
-  color: #fff;
-  font-size: 220px;
-  line-height: 250px;
-  vertical-align: middle;
-  background: #d6249f;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
 }
 
 .div_skills-title-block {

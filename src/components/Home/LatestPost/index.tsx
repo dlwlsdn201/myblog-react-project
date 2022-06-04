@@ -31,7 +31,13 @@ const LatestPost = () => {
 						<div className='contents-block-wrapper justify-center'>
 							<div className='contents-block flex-row '>
 								<Card style={{ flex: 0.5 }}>
-									<Card.Body>
+									<Card.Body
+										style={{
+											display: 'flex',
+											flexFlow: 'column nowrap',
+											alignItems: 'center',
+											justifyContent: 'center'
+										}}>
 										<Card.Title>리덕스란?</Card.Title>
 										<Card.Subtitle className='mb-2 text-muted'>
 											#learn
@@ -41,7 +47,13 @@ const LatestPost = () => {
 									</Card.Body>
 								</Card>
 								<Card style={{ flex: 0.5 }}>
-									<Card.Body>
+									<Card.Body
+										style={{
+											display: 'flex',
+											flexFlow: 'column nowrap',
+											alignItems: 'center',
+											justifyContent: 'center'
+										}}>
 										<Card.Title>뚜벅여행 코스 추천 서비스</Card.Title>
 										<Card.Subtitle className='mb-2 text-muted'>
 											#project

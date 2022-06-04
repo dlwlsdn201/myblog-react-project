@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-	faGit,
 	faGithub,
 	faInstagram,
 	faYoutube
@@ -22,7 +21,7 @@ const Profile = () => {
 				<span className='span_profile-desc-box'>이진우</span>
 			</div>
 			<div className='div_sns-block flex-row'>
-				<div className='div_sns-title flex-row'>SNS</div>
+				{/* <div className='div_sns-title flex-row'>SNS</div> */}
 				<div className='div_sns-icon-box flex-row'>
 					<span className='span_sns-icon-item'>
 						<FontAwesomeIcon
