@@ -19,6 +19,9 @@
   flex: 0.8;
 }
 
+  a {
+    text-decoration: none;}
+
 // Profile
 .section_basic-info {
   position: relative;
@@ -57,7 +60,7 @@
       }
 
       .div_sns-icon-box {
-        flex: 0.6;
+        flex: 0.5;
         justify-content: space-around;
 
         .sns-icon {
@@ -66,6 +69,22 @@
           cursor: pointer;
         }
 
+        
+      }
+      @media (max-width: 768px) {
+        flex: 1;
+
+        .div_sns-icon-box {
+          gap: 20%;
+        }
+      }
+
+        @media (max-width: 768px) {
+        flex: 1;
+
+        .div_sns-icon-box {
+          flex: 1;
+        }
       }
     }
   }
@@ -152,10 +171,25 @@ a {
         flex-flow: column nowrap;
         justify-content: center;
 
+        .card-title { 
+            word-break: keep-all;
+        }
+
         .card-text {
           font-weight: bolder;
           font-size: 1.4rem;
         }
+
+          @media (max-width: 768px) {
+            padding: 1rem 0.5rem;
+
+            .card-title {
+              font-size: 1.1rem;
+              }
+
+              .card-text {
+              font-size: 1rem;}
+          }
 
       }
     }
