@@ -1,9 +1,3 @@
-import {
-	faBook,
-	faLaptopCode,
-	faUsers
-} from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useMemo } from 'react';
 import { Button } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';

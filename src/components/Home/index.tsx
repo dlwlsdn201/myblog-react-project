@@ -2,8 +2,8 @@ import React from 'react';
 import Profile from './Profile';
 import Skills from './Skills/index';
 import Statistics from './Statistics';
-import LatestPost from './LatestPost/index';
-import Undesigned from './Undesigned';
+import Certificate from './Certificate';
+import Career from './Career';
 
 const HomeContainer = () => {
 	return (
@@ -11,13 +11,9 @@ const HomeContainer = () => {
 			<div className='p-4 p-md-5 mb-4 text-white rounded bg-dark intro-card'>
 				<section className='section_background'>
 					<div className='col-md-6 px-0'>
-						<h1 className='display-4 fst-italic'>게으른 완벽주의 INFJ</h1>
+						<h1 className='display-4 fst-italic'>게으른 완벽주의 ESFJ</h1>
 						<p className='lead my-3'>개발 중</p>
-						<p className='lead mb-0'>
-							<a href='#' className='text-white fw-bold'>
-								반갑습니다
-							</a>
-						</p>
+						<p className='lead mb-0'></p>
 					</div>
 				</section>
 			</div>
@@ -45,14 +41,14 @@ const HomeContainer = () => {
 				<div className='col-md-6'>
 					<div className='row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'>
 						<section className='section-common latest--post'>
-							<LatestPost />
+							<Certificate />
 						</section>
 					</div>
 				</div>
 				<div className='col-md-6'>
 					<div className='row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'>
 						<section className='section-common latest--post'>
-							<Undesigned />
+							<Career />
 						</section>
 					</div>
 				</div>
