@@ -14,23 +14,23 @@ import Project1 from './pages/projects/Project1';
 import Project2 from './pages/projects/Project2';
 const App = () => {
   return (
-    <div className="App">
-      <NavComponent />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/About" element={<About />}></Route>
+		<div className='App'>
+			<NavComponent />
+			<BrowserRouter>
+				<Routes>
+					<Route path='/' element={<Home />}></Route>
+					{/* <Route path="/About" element={<About />}></Route>
           <Route path="/FrontEnd" element={<FrontEnd />}></Route>
           <Route path="/BackEnd" element={<BackEnd />}></Route>
           <Route path="/Database" element={<Database />}></Route>
           <Route path="/Network" element={<Network />}></Route>
           <Route path="/Project1" element={<Project1 />}></Route>
           <Route path="/Project2" element={<Project2 />}></Route>
-          <Route path="/Album" element={<Album />}></Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
-  );
+          <Route path="/Album" element={<Album />}></Route> */}
+				</Routes>
+			</BrowserRouter>
+		</div>
+	);
 };
 
 export default App;
