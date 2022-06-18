@@ -188,3 +188,45 @@ a {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
+
+.div_certificate-wrapper .contents-block {
+  width: 100%;
+}
+
+.div_certificate-wrapper .card-title {
+  text-overflow: ellipsis;
+  width: 7rem;
+  overflow: hidden;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.div_certificate-wrapper tr th {
+  background-color: #F1EEE9;
+}
+
+.div_certificate-wrapper tr th:first-child {
+  width: 10%;
+}
+
+.div_certificate-wrapper tr td {
+  word-break: keep-all;
+}
+
+.div_certificate-wrapper tr td:first-child {
+  width: 10%;
+}
+
+@media screen and (min-width: 376px) and (max-width: 991px) {
+  .div_certificate-wrapper tr {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .div_certificate-wrapper tr {
+    font-size: 0.6rem;
+  }
+}

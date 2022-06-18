@@ -19,8 +19,9 @@
   flex: 0.8;
 }
 
-  a {
-    text-decoration: none;}
+a {
+  text-decoration: none;
+}
 
 // Profile
 .section_basic-info {
@@ -51,7 +52,7 @@
 
     .div_sns-block {
       flex: 0.3;
-        justify-content: flex-end;
+      justify-content: flex-end;
 
       .div_sns-title {
         flex: 0.4;
@@ -69,8 +70,9 @@
           cursor: pointer;
         }
 
-        
+
       }
+
       @media (max-width: 768px) {
         flex: 1;
 
@@ -79,7 +81,7 @@
         }
       }
 
-        @media (max-width: 768px) {
+      @media (max-width: 768px) {
         flex: 1;
 
         .div_sns-icon-box {
@@ -107,6 +109,7 @@ a {
     cursor: pointer;
   }
 }
+
 .div_skills-item-block {
   display: flex;
   align-items: center;
@@ -125,24 +128,26 @@ a {
       height: 1.1rem;
     }
   }
-.div_skills-control-block {
-  display: none;
-  margin-left: 1rem;
 
-  .btn-primary {
-    height: 100%;
-    font-size: 1rem;
-    padding: 0rem 0.3rem;
+  .div_skills-control-block {
+    display: none;
+    margin-left: 1rem;
 
-    &:first-child {
-      margin-right: 0.2rem;
+    .btn-primary {
+      height: 100%;
+      font-size: 1rem;
+      padding: 0rem 0.3rem;
+
+      &:first-child {
+        margin-right: 0.2rem;
+      }
+    }
+
+    &.setting-active {
+      display: flex;
     }
   }
 
-  &.setting-active {
-    display: flex;
-  }
-}
   &:last-child {
     margin-bottom: 0;
   }
@@ -151,8 +156,6 @@ a {
 // Statistics
 
 .div_statistics-wrapper {
-
-
   .contents-block-wrapper {
     display: flex;
     align-items: center;
@@ -171,8 +174,8 @@ a {
         flex-flow: column nowrap;
         justify-content: center;
 
-        .card-title { 
-            word-break: keep-all;
+        .card-title {
+          word-break: keep-all;
         }
 
         .card-text {
@@ -180,16 +183,17 @@ a {
           font-size: 1.4rem;
         }
 
-          @media (max-width: 768px) {
-            padding: 1rem 0.5rem;
+        @media (max-width: 768px) {
+          padding: 1rem 0.5rem;
 
-            .card-title {
-              font-size: 1.1rem;
-              }
-
-              .card-text {
-              font-size: 1rem;}
+          .card-title {
+            font-size: 1.1rem;
           }
+
+          .card-text {
+            font-size: 1rem;
+          }
+        }
 
       }
     }
@@ -207,5 +211,52 @@ a {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
+  }
+}
+
+// Certificate
+
+.div_certificate-wrapper {
+
+  .contents-block {
+    width: 100%;
+  }
+
+  .card-title {
+    text-overflow: ellipsis;
+    width: 7rem;
+    overflow: hidden;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  tr {
+
+    th {
+      background-color: #F1EEE9;
+    }
+
+    th:first-child {
+      width: 10%
+    }
+
+    td {
+      word-break: keep-all;
+    }
+
+    td:first-child {
+      width: 10%
+    }
+
+    @media screen and (min-width:376px) and (max-width: 991px) {
+      font-size: 0.8rem;
+    }
+
+    @media screen and (max-width: 375px) {
+      font-size: 0.6rem;
+    }
+
   }
 }
