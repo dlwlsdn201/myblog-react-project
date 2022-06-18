@@ -30,9 +30,8 @@ const Certificate = () => {
 	);
 
 	useEffect(() => {
-		console.log('CertificateData:', CertificateData);
 		updateCertificateList(CertificateData);
-	});
+	}, []);
 
 	return (
 		<div>

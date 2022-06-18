@@ -6,6 +6,8 @@
 
 .title-block {
   flex: 0.2;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
 }
 
 .contents-block-wrapper {
@@ -229,4 +231,50 @@ a {
   .div_certificate-wrapper tr {
     font-size: 0.6rem;
   }
+}
+
+.div_career-wrapper .contents-block {
+  width: 100%;
+}
+
+.div_career-wrapper .contents-block .btn {
+  padding: 2% 0;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  background: #F1EEE9;
+  width: 100%;
+}
+
+.div_career-wrapper .contents-block .btn:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.div_career-wrapper .card-title {
+  color: red;
+  text-overflow: ellipsis;
+  width: 7rem;
+  overflow: hidden;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.modal-content {
+  padding: 0.2rem 1rem;
+}
+
+.modal-content .modal-header {
+  font-size: 2rem;
+}
+
+.modal-content .modal-body .container-auto {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.modal-content #label {
+  flex: 0.3;
 }

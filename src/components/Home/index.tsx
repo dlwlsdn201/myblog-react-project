@@ -3,7 +3,7 @@ import Profile from './Profile';
 import Skills from './Skills/index';
 import Statistics from './Statistics';
 import Certificate from './Certificate';
-import Undesigned from './Undesigned';
+import Career from './Career';
 
 const HomeContainer = () => {
 	return (
@@ -48,7 +48,7 @@ const HomeContainer = () => {
 				<div className='col-md-6'>
 					<div className='row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'>
 						<section className='section-common latest--post'>
-							<Undesigned />
+							<Career />
 						</section>
 					</div>
 				</div>
