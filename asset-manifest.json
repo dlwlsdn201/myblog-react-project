@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/myblog-react-project/static/css/main.d41df8d2.css",
-    "main.js": "/myblog-react-project/static/js/main.296e0d8b.js",
-    "static/js/787.d3eb9ff0.chunk.js": "/myblog-react-project/static/js/787.d3eb9ff0.chunk.js",
+    "main.css": "/myblog-react-project/static/css/main.2eb3a16d.css",
+    "main.js": "/myblog-react-project/static/js/main.02fdc7f6.js",
+    "static/js/787.a521b789.chunk.js": "/myblog-react-project/static/js/787.a521b789.chunk.js",
     "static/media/home_bg.jpg": "/myblog-react-project/static/media/home_bg.cca59c1b3975333dd3fd.jpg",
     "index.html": "/myblog-react-project/index.html",
-    "main.d41df8d2.css.map": "/myblog-react-project/static/css/main.d41df8d2.css.map",
-    "main.296e0d8b.js.map": "/myblog-react-project/static/js/main.296e0d8b.js.map",
-    "787.d3eb9ff0.chunk.js.map": "/myblog-react-project/static/js/787.d3eb9ff0.chunk.js.map"
+    "main.2eb3a16d.css.map": "/myblog-react-project/static/css/main.2eb3a16d.css.map",
+    "main.02fdc7f6.js.map": "/myblog-react-project/static/js/main.02fdc7f6.js.map",
+    "787.a521b789.chunk.js.map": "/myblog-react-project/static/js/787.a521b789.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d41df8d2.css",
-    "static/js/main.296e0d8b.js"
+    "static/css/main.2eb3a16d.css",
+    "static/js/main.02fdc7f6.js"
   ]
 }
