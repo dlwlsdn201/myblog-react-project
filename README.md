@@ -1,11 +1,22 @@
 # my blog page
 
 개인 공부 내용 및 프로젝트 결과물 기록과 일상 사진들을 공유하기 위한 개인 블로그 개발 프로젝트 입니다.
+> 링크 바로가기 -> https://dlwlsdn201.github.io/myblog-react-project/
 
-> # Preview
->
-> (empty)
+# Preview
+> ## 데스크탑
+<p align="center">
+<img width="70%" src="https://user-images.githubusercontent.com/53039583/175327754-ecfb79dd-ca03-49ef-97e6-f6f2d01c32c9.png"/>
+  </p>                                                                                                                       
+<!-- > ![image](https://user-images.githubusercontent.com/53039583/175327754-ecfb79dd-ca03-49ef-97e6-f6f2d01c32c9.png) -->
 
+> ## 모바일
+
+<p align="center">
+<img width="35%" src="https://user-images.githubusercontent.com/53039583/175327899-e5c5f532-b667-412c-9150-27782ebf9d7b.png"/>
+</p>
+ <!-- > ![image](https://user-images.githubusercontent.com/53039583/175327899-e5c5f532-b667-412c-9150-27782ebf9d7b.png) -->
+    
 ---
 
 # Skills
