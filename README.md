@@ -1,6 +1,6 @@
 # my blog page
 
-개인 공부 내용 및 프로젝트 결과물 기록과 일상 사진들을 공유하기 위한 개인 블로그 개발 프로젝트 입니다.
+개인 역량 PR용 페이지  입니다.
 > 링크 바로가기 -> https://dlwlsdn201.github.io/myblog-react-project/
 
 # Preview
