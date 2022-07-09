@@ -43,3 +43,9 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.divide-line {
+  width: 100%;
+  border: 1px solid black;
+  margin: 1rem auto;
+}

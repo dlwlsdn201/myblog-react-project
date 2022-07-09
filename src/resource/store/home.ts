@@ -6,6 +6,12 @@ export interface ISkillStateObj {
 	color: string;
 }
 
+export interface ICertificate {
+	id: number;
+	name: string;
+	takeDate: string;
+}
+
 type State = {
 	html: ISkillStateObj;
 	css: ISkillStateObj;
@@ -16,6 +22,7 @@ type State = {
 	visitCount: number;
 	studyPost: number;
 	project: number;
+	certificateList: Array<ICertificate>;
 	increaseHTML: () => void;
 	increaseCSS: () => void;
 	increaseSASS: () => void;
@@ -27,6 +34,7 @@ type State = {
 	decreaseJS: () => void;
 	decreaseREACT: () => void;
 	isSetting: () => void;
+	updateCertificateList: (resData: Array<ICertificate>) => void;
 };
 
 const homeState = create<State>((set) => ({
@@ -54,6 +62,7 @@ const homeState = create<State>((set) => ({
 	visitCount: 0,
 	studyPost: 0,
 	project: 0,
+	certificateList: [],
 	increaseHTML: () =>
 		set(
 			produce((state) => {
@@ -118,6 +127,12 @@ const homeState = create<State>((set) => ({
 		set(
 			produce((state) => {
 				state.setting = !state.setting;
+			})
+		),
+	updateCertificateList: (resData: Array<any>) =>
+		set(
+			produce((state) => {
+				state.certificateList = resData;
 			})
 		)
 }));
