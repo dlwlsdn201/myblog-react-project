@@ -1,7 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useMemo } from 'react';
-import { Button, Table } from 'react-bootstrap';
-import Card from 'react-bootstrap/Card';
+import { Table } from 'react-bootstrap';
 import { CertificateData } from '../../../resource/SampleData';
 import { homeStore } from '../../../resource/store';
 const Certificate = () => {
@@ -31,7 +29,7 @@ const Certificate = () => {
 
 	useEffect(() => {
 		updateCertificateList(CertificateData);
-	}, []);
+	}, [updateCertificateList]);
 
 	return (
 		<div>

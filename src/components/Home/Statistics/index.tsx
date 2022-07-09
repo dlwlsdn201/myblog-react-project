@@ -1,17 +1,13 @@
 import {
 	faBook,
 	faLaptopCode,
-	faUser,
 	faUsers
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import { useStore } from 'zustand';
 
 const Statistics = (): JSX.Element => {
-	// const { visitCount, studyPost, project } = useStore();
-
 	return (
 		<div className='inner-container'>
 			<div className='div_statistics-wrapper'>
