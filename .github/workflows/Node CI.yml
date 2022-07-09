@@ -17,5 +17,3 @@ jobs: ## job들을 명시
           npm ci
           npm run build --if present
           npm test
-        env: 
-          CI: true
