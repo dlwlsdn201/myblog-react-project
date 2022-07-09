@@ -37,7 +37,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn run build",
-"deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -65,7 +65,5 @@
   "devDependencies": {
     "cross-env": "^7.0.3"
   },
-  "homepage": "https://dlwlsdn201.github.io/myblog-react-project",
   "name": "portpolio-blog"
-
 }
